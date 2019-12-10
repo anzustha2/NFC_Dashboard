@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WriteEncryptText"
+    android:padding="30dp"
+    android:background="@color/background">
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:layout_marginTop="20dp"
+         android:textColorHint="@color/colorAccent"
+         >
+
+         <EditText
+             android:id="@+id/name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:hint="Name:"
+             android:inputType="text"
+             android:textColorHighlight="#03A9F4"
+             android:textColorHint="#9C27B0"
+             android:textColorLink="#5CC2B8"
+             android:textSize="24sp"
+             android:textStyle="bold" />
+     </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:layout_marginTop="20dp"
+         android:textColorHint="@color/colorAccent"
+         >
+
+         <EditText
+             android:id="@+id/phone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:hint="Phone:"
+             android:inputType="phone"
+             android:textColorHighlight="#9C27B0"
+             android:textColorHint="#F44336"
+             android:textColorLink="#326791"
+             android:textSize="24sp"
+             android:textStyle="bold" />
+     </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:layout_marginTop="20dp"
+         android:textColorHint="@color/colorAccent"
+         >
+
+         <EditText
+             android:id="@+id/web"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:ems="10"
+             android:hint="WebPage(URL):"
+             android:inputType="textUri"
+             android:textColorHighlight="#9C27B0"
+             android:textColorHint="#F44336"
+             android:textSize="24sp"
+             android:textStyle="bold" />
+     </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/colorAccent"
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email:"
+            android:inputType="textWebEmailAddress"
+            android:textColorHighlight="#9C27B0"
+            android:textColorHint="#F44336"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </android.support.design.widget.TextInputLayout>
+
+     <android.support.design.widget.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:focusable="true"
+         android:focusableInTouchMode="true"
+         android:layout_marginTop="20dp"
+         android:textColorHint="@color/colorAccent"
+         >
+
+         <EditText
+             android:id="@+id/description"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:ems="10"
+             android:hint="Description/Comment:"
+             android:inputType="textMultiLine"
+             android:textColorHighlight="#9C27B0"
+             android:textColorHint="#F44336"
+             android:textSize="24sp"
+             android:textStyle="bold"
+             android:autoLink="web"
+             android:clickable="true"
+             android:linksClickable="true"
+             android:textColorLink="@color/colorPrimary"
+             android:scrollbars="vertical"
+             android:maxHeight="60dp"
+             />
+     </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/urlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Save"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="568dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/bar"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="8dp" />
+
+
+</LinearLayout>
